@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("https://imgs.search.brave.com/JenRli_nH7dV_KqdR87KIw4svuyoObn3RY4VXjPs5RM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9tZWRpY28tcHJl/c2lvbmEtYm90b24t/bWFuby1wYW50YWxs/YS12aXJ0dWFsLWNv/bmNlcHRvLXRlY25v/bG9naWEtbWVkaWNh/XzU0OTUyNC01OTMu/anBnP3NpemU9NjI2/JmV4dD1qcGc")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form {
+  background-color: aliceblue;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+span {
+  font-size: 30px;
+  background-color: aliceblue;
+}
+label {
+  font-size: 25px;
+  color: teal;
+  background-color: aliceblue;
+}
+input[type="text"],
+input[type="password"] {
+  font-size: 15px;
+  border: none;
+  height: 25px;
+  width: 90%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(173, 170, 170);
+}
+
+input[type="submit"] {
+  border-radius: 8px;
+  height: 30px;
+  width: 50%;
+  border: none;
+  background-color: rgb(48, 184, 48);
+  transition: all 1s;
+}
+input[type="submit"]:hover {
+  background-color: green;
+  cursor: pointer;
+  transition: all 1s;
+}
