@@ -15,7 +15,7 @@
             error_reporting(E_ALL ^E_NOTICE);
             /* condicional para mostrar mensaje dependiendo si hay o no errores en validacion de datos */
             if($_GET["error"] == "si"){
-                echo "<span style='color: red;'' >Verifica tus datos</span>";
+                echo "<span style='color: red;'' >Verifica tus datos</span><p>Usuario o password inv&aacute;lidos</p>";
             }else{
                 echo "<span>Ingresa tus datos</span>";
             }
