@@ -33,7 +33,8 @@ span {
 }
 label {
   font-size: 25px;
-  color: teal;
+  color: #0c6cfb;
+  font-weight: bold;
   background-color: aliceblue;
 }
 input[type="text"],
@@ -51,12 +52,14 @@ input[type="submit"] {
   border-radius: 8px;
   height: 30px;
   width: 50%;
+  color: white;
+  font-weight: bold;
   border: none;
-  background-color: rgb(48, 184, 48);
+  background-color: #0c6cfb;
   transition: all 1s;
 }
 input[type="submit"]:hover {
-  background-color: green;
+  background-color: #1d54a6;
   cursor: pointer;
   transition: all 1s;
 }

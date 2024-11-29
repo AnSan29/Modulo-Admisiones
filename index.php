@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
@@ -15,7 +15,7 @@
             error_reporting(E_ALL ^E_NOTICE);
             /* condicional para mostrar mensaje dependiendo si hay o no errores en validacion de datos */
             if($_GET["error"] == "si"){
-                echo "<span>Verifica tus datos</span>";
+                echo "<span style='color: red;'' >Verifica tus datos</span>";
             }else{
                 echo "<span>Ingresa tus datos</span>";
             }

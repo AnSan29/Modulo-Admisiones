@@ -4,7 +4,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Asignacion de citas</title>
+        <title>salud-pro</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -19,12 +19,33 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        
+      
+        <style>
+          header{
+            border-bottom: 2px solid blue;
+          }
+          h1{
+            color:  white;
+            text-align: center;
+            background-color: #0c6cfb;
+            margin: auto;
+          }
+          footer{
+            background-color: #0c6cfb;
+            color:  white;
+            text-align: center;
+          }
+          footer p{
+            padding-top: 1em;
+            margin: 10px auto;
+          }
+        </style>
         
     </head>
 
-    <body><br>
+    <body>
         <header>
+            <h1>Salud Pro | Admisioines</h1><br>
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Asignar nueva cita</a>
@@ -152,7 +173,10 @@
         
         </main>
         <footer>
-            <!-- place footer here -->
+            <p><b>Salud pro</b> es un sitema de gesti&oacute;n de citas m&eacute;dicas, desarrollado por estudiantes de programacion web en la universidad del litoral. </p>
+            <a href="https://litoral.edu.co/portal/">
+                <img src="https://litoral.edu.co/portal/wp-content/uploads/2022/12/Logo_2.png" alt="">
+            </a><br><br>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script

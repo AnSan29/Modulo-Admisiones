@@ -8,9 +8,9 @@ $fila = mysqli_fetch_array($ejecutar5);
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
-        <title>Edici&oacute;n de citas</title>
+        <title>salud-pro</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -25,17 +25,35 @@ $fila = mysqli_fetch_array($ejecutar5);
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        
+        <style>
+          header{
+            border-bottom: 2px solid blue;
+          }
+          h1{
+            color:  white;
+            text-align: center;
+            background-color: #0c6cfb;
+            margin: auto;
+          }
+          footer{
+            background-color: #0c6cfb;
+            color:  white;
+            text-align: center;
+          }
+          footer p{
+            padding-top: 1em;
+            margin: 10px auto;
+          }
+        </style>
         
     </head>
 
-    <body><br>
-        <main class="container my-4"><br>
-            <h3>
-                Edici&oacute;n de cita m&eacute;dica:
-            </h3>
-            <br>
-            <br>
+    <body>
+        <header>
+        <h1>Salud Pro | Editar cita</h1>
+        </header>
+        <main class="container my-4">
+            
             <form action="actualizar.php" method="post">
                 <fieldset>
                   <legend>Datos del usuario:</legend><br>
@@ -119,7 +137,7 @@ $fila = mysqli_fetch_array($ejecutar5);
                         class="form-select"
                         name="especialidad_slc"
                         >
-                        <option value=""><?= $fila['especialidad'] ?></option>
+                        <option value="<?= $fila['especialidad'] ?>"><?= $fila['especialidad'] ?></option>
                         <!-- agregamos opciones de manera dinámica desde base de datos -->
                         <?php include("select-especialidad.php"); ?>
                       </select>
@@ -149,7 +167,7 @@ $fila = mysqli_fetch_array($ejecutar5);
 
                     <button
                      type="submit" 
-                     class="btn btn-primary">Agendar</button>
+                     class="btn btn-primary">Actualizar</button>
                     
                      <a
                             name=""
@@ -170,7 +188,10 @@ $fila = mysqli_fetch_array($ejecutar5);
         
         </main>
         <footer>
-            <!-- place footer here -->
+            <p><b>Salud pro</b> es un sitema de gesti&oacute;n de citas m&eacute;dicas, desarrollado por estudiantes de programacion web en la universidad del litoral. </p>
+            <a href="https://litoral.edu.co/portal/">
+                <img src="https://litoral.edu.co/portal/wp-content/uploads/2022/12/Logo_2.png" alt="">
+            </a><br><br>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script

@@ -6,9 +6,9 @@ include("mostrar.php");
 
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
-        <title>Asignacion de citas</title>
+        <title>salud-pro</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -23,12 +23,25 @@ include("mostrar.php");
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        
+      
+        <style>
+          header{
+            border-bottom: 2px solid blue;
+          }
+          h1{
+            color:  white;
+            text-align: center;
+            background-color: #0c6cfb;
+            margin: auto;
+          }
+          
+        </style>
         
     </head>
 
-    <body><br>
+    <body>
         <header>
+            <h1>Salud Pro | Citas agendadas</h1><br>
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="" href="agendar-cita.php">Asignar nueva cita</a>
@@ -43,7 +56,7 @@ include("mostrar.php");
         </header>
         <main class="container my-4"><br>
             <h3>
-                Citas agendadas:
+                Historico de citas:
                 
             </h3>
             <br>
@@ -103,7 +116,7 @@ include("mostrar.php");
         
         </main>
         <footer>
-            <!-- place footer here -->
+            
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
