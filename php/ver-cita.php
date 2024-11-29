@@ -81,9 +81,9 @@ include("mostrar.php");
                     name=""
                     id=""
                     class="btn btn-danger"
-                    href=""
+                    href="eliminar.php?id=<?= $fila['id']?>"
                     role="button"
-                    onclick="return confirmar()">Eliminar</a>
+                    onclick="return verificar()">Eliminar</a>
                 </td>
               </tr>
               <?php } ?>
@@ -111,3 +111,14 @@ include("mostrar.php");
         ></script>
     </body>
 </html>
+<script>
+  function verificar(){
+    let respuesta = confirm("Desea eliminar esta cita?");
+
+    if(respuesta){
+      return true;
+    }else{
+      return false;
+    }
+  }
+</script>
