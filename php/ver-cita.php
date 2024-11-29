@@ -80,6 +80,14 @@ include("mostrar.php");
                   <a
                     name=""
                     id=""
+                    class="btn btn-warning"
+                    href="editar.php?id=<?= $fila['id']?>"
+                    role="button"
+                    >Editar</a>
+
+                  <a
+                    name=""
+                    id=""
                     class="btn btn-danger"
                     href="eliminar.php?id=<?= $fila['id']?>"
                     role="button"
